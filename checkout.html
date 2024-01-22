@@ -3,115 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Header with Password Input</title>
+    <title>Magesh's Love-themed Website</title>
     <style>
-        /* ... (previous styles) ... */
-
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Love-themed gradient background */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
-        input[type="password"]:focus {
-            border-color: #3498db; /* Blue border on focus */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        .password-container {
-            position: relative;
+        p {
+            font-size: 18px;
         }
 
-        .hide-password-icon {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-
-        .hide-password-icon img {
-            width: 20px;
-            height: 20px;
-        }
-
-        .password-animation {
-            animation: shake 0.4s ease;
-        }
-
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            20%, 60% { transform: translateX(-10px); }
-            40%, 80% { transform: translateX(10px); }
+        .heart-emoji {
+            font-size: 48px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1 id="headerText">Automation</h1>
-        <div class="dropdown" id="dropdown">
-            <span>Options</span>
-            <div class="dropdown-content">
-                <button id="yesButton">Yes</button>
-                <button>No</button>
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <h2 style="color: #333;">Mobile Phones for Sale</h2>
-        <div class="product">
-            <img src="phone1.jpg" alt="Mobile Phone 1">
-            <h3>Phone Model 1</h3>
-            <p>Description of the phone and its features. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><strong>Price:</strong> $499</p>
-            <button class="addToCartButton">Add to Cart</button>
-        </div>
-
-        <div class="product">
-            <img src="phone2.jpg" alt="Mobile Phone 2">
-            <h3>Phone Model 2</h3>
-            <p>Description of the phone and its features. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><strong>Price:</strong> $599</p>
-            <button class="addToCartButton">Add to Cart</button>
-        </div>
-
-        <!-- Add more products as needed -->
-
-        <button id="downloadButton">Download</button>
-
-        <div class="password-container">
-            <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off">
-            <div class="hide-password-icon" id="hidePasswordIcon">
-                <img src="eye-open.png" alt="Hide Password">
-            </div>
-        </div>
-    </section>
-
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="loading-spinner"></div>
-    </div>
-
-    <script>
-        var passwordInput = document.getElementById('passwordInput');
-        var hidePasswordIcon = document.getElementById('hidePasswordIcon');
-
-        hidePasswordIcon.onclick = function() {
-            var type = passwordInput.type === 'password' ? 'text' : 'password';
-            passwordInput.type = type;
-
-            // Add animation class for a "shaking" effect
-            passwordInput.classList.add('password-animation');
-
-            // Remove animation class after the animation duration (0.4s)
-            setTimeout(function() {
-                passwordInput.classList.remove('password-animation');
-            }, 400);
-        };
-    </script>
+    <h1>Hi, this is Magesh</h1>
+    <p>Thanks for visiting the site. ILU</p>
+    <div class="heart-emoji">❤️</div>
 </body>
 </html>
